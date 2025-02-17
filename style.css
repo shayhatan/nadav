@@ -1,0 +1,223 @@
+/* כללי */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2c3e50; /* צבע רקע כהה */
+    color: #ecf0f1; /* צבע טקסט בהיר */
+    direction: rtl;
+    padding: 0 15px; /* מרווחים בצדדים */
+    max-width: 1200px;
+    margin: 0 auto; /* ממורכז */
+    text-align: center; /* מרכז את כל התוכן */
+}
+
+/* ניווט */
+.navbar {
+    background-color: #34495e; /* צבע כהה נוסף */
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    margin: 0 15px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #3498db; /* צבע כפתור מדגיש */
+}
+
+/* Header */
+.header {
+    background: #1abc9c; /* רקע בהיר ודינמי */
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.8rem;  /* גודל טקסט קטן יותר */
+    font-weight: 700;
+    color: #ecf0f1; /* צבע טקסט בהיר */
+    line-height: 1.4; /* מרווח בין השורות */
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%; /* מרווח מצדדים */
+    margin: 0 auto;
+}
+
+.header-content h1 span {
+    display: block;
+    font-size: 1.6rem; /* גודל טקסט קטן יותר לחלק השני */
+    color: #ecf0f1;  /* צבע כתום בהיר לחלקים חשובים */
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #27ae60; /* צבע רקע כפתור */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #2ecc71;
+}
+
+/* סילבוס */
+.syllabus ol {
+    padding-left: 20px;
+}
+
+.syllabus li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #34495e; /* צבע כהה לפוטר */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* תמונות */
+.image-container {
+    display: flex;
+    justify-content: center; /* ממקם את התמונה במרכז */
+    align-items: center; /* ממקם את התמונה במרכז האנכי */
+    margin: 20px 0;
+    max-width: 85%; /* תמונה שתופסת יותר רוחב */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container img {
+    width: 45%; /* התמונה תתפוס 90% מהמרחב */
+    max-width: 45%; /* מקסימום רוחב 90% */
+    height: auto;
+    max-height: 400px; /* מגביל את גובה התמונה */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* התאמות לתמונות בדפים ספציפיים */
+.intro .image-container img {
+    max-width: 60%; /* דף הבית - תמונות קטנות יותר */
+}
+
+.syllabus .image-container img {
+    max-width: 80%; /* סילבוס - תמונות בגדלים מתונים */
+}
+
+.contact .image-container img {
+    max-width: 60%; /* צור קשר - תמונה בגודל בינוני */
+}
+
+/* שיפורים נוספים לכפתורים */
+.nav-link, .button {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3498db; /* צבע מדגיש */
+}
+
+.button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1); /* הגדלה של כפתור בזמן מעבר */
+}
+
+/* כותרות */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ecf0f1;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #f39c12; /* צבע כתום עבור כותרת משנה */
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* רשימות */
+ul, ol {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* סגנון של תוכן "מה נלמד בקורס?" */
+.intro h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #f39c12; /* צבע כותרת משולב עם כתום */
+    margin-bottom: 20px;
+}
+
+.intro ul {
+    display: inline-block;
+    text-align: right; /* ממרכז את הטקסט בימין */
+    margin-top: 20px;
+}
+
+.intro ul li {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-right: 10px; /* מוסיף מרווח קטן בצד ימין */
+    position: relative;
+}
+
+.intro ul li::before {
+    content: '✔';
+    position: absolute;
+    right: -20px; /* ממקם את סימן ה-"V" בצד ימין */
+    top: 0;
+    color: #27ae60; /* צבע של סמני הוי */
+    font-size: 1.6rem;
+}
+
+
+/* שדרוגים לכפתורים */
+.nav-link, .button {
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3498db; /* צבע מדגיש */
+}
+
+.button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1); /* הגדלה של כפתור בזמן מעבר */
+}
