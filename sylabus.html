@@ -3,46 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>סילבוס קורס קריפטו</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>סילבוס - קורס קריפטו 360°</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="navbar">
+        <nav class="navbar">
             <a href="index.html" class="nav-link">דף בית</a>
-            <a href="sylabus.html" class="nav-link">סילבוס</a>
-            <a href="contact.html" class="nav-link">צור קשר</a>
-        </div>
+            <a href="sylabus.html" class="nav-link active">סילבוס</a>
+            <a href="https://wa.me/972534513931?text=שלום,%20אני%20מתעניין%20בקורס%20קריפטו%20שלך.%20אשמח%20לשמוע%20פרטים%20נוספים." target="_blank" class="nav-link">צור קשר</a>
+        </nav>
         <div class="header-content">
-            <h1>סילבוס קורס קריפטו</h1>
-            <p>תוכנית לימודים עשירה שמכסה את כל מה שצריך לדעת בתחום הקריפטו.</p>
+            <h1 class="fade-in">מה תלמדו בקורס?</h1>
+            <p class="fade-in-delay">תכנית לימוד מעשית שתוביל אתכם מהבסיס להצלחה במסחר והשקעות בקריפטו.</p>
         </div>
     </header>
 
     <section class="syllabus">
         <div class="container">
-            <h2>תוכנית הלימודים המפורטת</h2>
-            <ol>
-                <li><strong>שיעור 1:</strong> הכרות עם עולם הקריפטו והבלוקצ'יין</li>
-                <li><strong>שיעור 2:</strong> איך להשקיע במטבעות קריפטוגרפיים</li>
-                <li><strong>שיעור 3:</strong> ניהול סיכונים בשוק הקריפטו</li>
-                <li><strong>שיעור 4:</strong> כלים וטכניקות לסוחרים מתקדמים</li>
-                <li><strong>שיעור 5:</strong> הבנת החוזים החכמים ו- DeFi</li>
-                <li><strong>שיעור 6:</strong> אוטומציה ו- Crypto Bots</li>
-                <li><strong>שיעור 7:</strong> יצירת תיק השקעות דינמי וניהול סיכונים מתקדם</li>
-                <li><strong>שיעור 8:</strong> השקעות בקריפטו ארוך טווח</li>
-            </ol>
+            <h2 class="underline">תכנית הלימוד</h2>
+            <div class="syllabus-grid">
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item1" class="toggle-checkbox">
+                    <label for="item1" class="toggle-btn">1. יסודות הקריפטו והבלוקצ'יין<br><span class="syllabus-subtitle">מבוא לקריפטו והבנת הטכנולוגיה</span></label>
+                    <ul class="syllabus-list">
+                        <li>מבוא לקריפטו והבנת הטכנולוגיה</li>
+                        <li>Bitcoin & Satoshi Nakamoto</li>
+                        <li>בלוקצ'יין – מבנה ואופן פעולה</li>
+                        <li>חוזים חכמים ושימושים</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item2" class="toggle-checkbox">
+                    <label for="item2" class="toggle-btn">2. סוגי מטבעות ומערכות בקריפטו<br><span class="syllabus-subtitle">Bitcoin מול אלטים – ההבדלים והשימושים</span></label>
+                    <ul class="syllabus-list">
+                        <li>Bitcoin מול אלטים – ההבדלים והשימושים</li>
+                        <li>Stablecoins וחשיבותם</li>
+                        <li>מטבעות NFT ו-Metaverse</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item3" class="toggle-checkbox">
+                    <label for="item3" class="toggle-btn">3. מסחר והשקעות בקריפטו<br><span class="syllabus-subtitle">קנייה ומכירה של מטבעות – פלטפורמות מסחר</span></label>
+                    <ul class="syllabus-list">
+                        <li>קנייה ומכירה של מטבעות – פלטפורמות מסחר</li>
+                        <li>ניתוח טכני – גרפים, אינדיקטורים ומגמות</li>
+                        <li>ניתוח פונדמנטלי – זיהוי פרויקטים עם פוטנציאל</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item4" class="toggle-checkbox">
+                    <label for="item4" class="toggle-btn">4. אסטרטגיות מסחר מתקדמות<br><span class="syllabus-subtitle">Long & Short – מסחר בשווקים עולים ויורדים</span></label>
+                    <ul class="syllabus-list">
+                        <li>Long & Short – מסחר בשווקים עולים ויורדים</li>
+                        <li>Margin & Futures – מסחר במינוף</li>
+                        <li>מסחר אוטומטי עם בוטים ו-AI</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item5" class="toggle-checkbox">
+                    <label for="item5" class="toggle-btn">5. ארנקים ואבטחת קריפטו<br><span class="syllabus-subtitle">בחירת ארנק דיגיטלי – חם מול קר</span></label>
+                    <ul class="syllabus-list">
+                        <li>בחירת ארנק דיגיטלי – חם מול קר</li>
+                        <li>אבטחת מפתחות פרטיים וגיבוי נכון</li>
+                        <li>שימוש ב-Multi-Signature Wallets</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item6" class="toggle-checkbox">
+                    <label for="item6" class="toggle-btn">6. DeFi - פיננסים מבוזרים<br><span class="syllabus-subtitle">Staking & Yield Farming</span></label>
+                    <ul class="syllabus-list">
+                        <li>מה זה DeFi וכיצד הוא משנה את העולם הפיננסי</li>
+                        <li>Staking & Yield Farming</li>
+                        <li>הלוואות חכמות ללא מתווכים</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item7" class="toggle-checkbox">
+                    <label for="item7" class="toggle-btn">7. NFT & Metaverse<br><span class="syllabus-subtitle">פלטפורמות מסחר ב-NFT</span></label>
+                    <ul class="syllabus-list">
+                        <li>הבנת NFT ושימושים</li>
+                        <li>פלטפורמות מסחר ב-NFT</li>
+                        <li>השקעות במטאברס</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item8" class="toggle-checkbox">
+                    <label for="item8" class="toggle-btn">8. יצירת מטבעות ופרויקטים בקריפטו<br><span class="syllabus-subtitle">Solidity ו-Smart Contracts</span></label>
+                    <ul class="syllabus-list">
+                        <li>איך ליצור מטבע קריפטו משלך</li>
+                        <li>Solidity ו-Smart Contracts</li>
+                        <li>אסטרטגיות קידום וחשיפה</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item9" class="toggle-checkbox">
+                    <label for="item9" class="toggle-btn">9. כלים מקצועיים למעקב וניתוח שוק<br><span class="syllabus-subtitle">מעקב אחר תנועות כספים ברשת</span></label>
+                    <ul class="syllabus-list">
+                        <li>שימוש ב-CoinMarketCap ו-CoinGecko</li>
+                        <li>מעקב אחר תנועות כספים ברשת</li>
+                        <li>TradingView & Messari – ניתוח מתקדם</li>
+                    </ul>
+                </div>
+                <div class="syllabus-item">
+                    <input type="checkbox" id="item10" class="toggle-checkbox">
+                    <label for="item10" class="toggle-btn">10. רגולציה, מיסוי וחוקיות בקריפטו<br><span class="syllabus-subtitle">CBDC – מטבעות דיגיטליים ממשלתיים</span></label>
+                    <ul class="syllabus-list">
+                        <li>רגולציה עולמית בקריפטו</li>
+                        <li>מיסוי רווחים וציות לחוק</li>
+                        <li>CBDC – מטבעות דיגיטליים ממשלתיים</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="image-container">
-        <img src="crypto_syllabus.jpg" alt="סילבוס קורס קריפטו">
+    <section class="cta">
+        <div class="container">
+            <h2 class="fade-in">התחילו את המסע שלכם לקריפטו עכשיו!</h2>
+            <p class="fade-in-delay">למדו כלים מקצועיים וקבלו ליווי אישי להצלחה במסחר והשקעות.</p>
+            <a href="https://wa.me/972534513931?text=שלום,%20אני%20מתעניין%20בקורס%20קריפטו%20שלך.%20אשמח%20לשמוע%20פרטים%20נוספים." class="button" target="_blank">הירשמו עכשיו</a>
+        </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2025 קורס קריפטו - כל הזכויות שמורות</p>
+            <p>© 2025 קורס קריפטו 360° - כל הזכויות שמורות</p>
         </div>
     </footer>
 </body>
